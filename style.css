@@ -1,0 +1,850 @@
+
+/* ==========================================
+   1. Body
+========================================== */
+
+/* Corps de la page (body) + Police d'écriture & Couleurs */
+body{
+    margin:0;
+    padding: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: #F7F8F9;
+    color: #012A44;
+
+}
+
+
+/* ==========================================
+   02. HEADER
+========================================== */
+
+/* Structure générale du header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #FFFFFF;
+    border-bottom: 1px dashed #d0d0d0;
+
+}
+
+/* Logo  */
+.logo img{
+    height: 40px;
+    width: auto;
+    border-radius: 9px;
+    display: block;
+
+}
+
+/* Menu de navigation (.main_nav) */
+
+.main_nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    margin:0;
+    padding: 0;
+}
+
+.main_nav a{
+    text-decoration: none;
+    color: #012A44;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Effets au survol des liens */
+
+.main_nav a:hover{
+    color:#468FAF;
+}
+
+/* Bouton de contact (.email_contact) */
+.email_contact {
+    display: inline-block ;
+    padding: 10px 22px;
+    background-color: #014F86;
+    color: #FFFFFF;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+}
+
+/* Effet au survol du bouton contact */
+.email_contact:hover{
+    background-color: #012A44;
+}
+
+
+/* ==========================================
+   03. ACCUEIL - SECTION PRINCIPALE
+========================================== */
+
+/* Structure principale (main) */
+main{
+    text-align: center;
+    padding: 80px 20px 60px 20px;
+    background-color: #F7F8F9;
+}
+
+/* Titre principal (h1) */
+main h1{
+    font-size: 56px;
+    font-weight: 800;
+    color:#012A44;
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+}
+
+/* Mots en couleur dans le titre (h1 span) */
+
+main h1 span{
+    color:#468FAF;
+}
+
+/* Sous-titre (.h1_sous_titre) */
+.h1_sous_titre{
+    font-size: 18px;
+    font-weight: 500;
+    color:#22577A;
+    max-width: 650px;
+    margin: 0 auto 35px auto;
+    line-height: 1.5;
+}
+
+/* Bouton principal (.bouton_cta) */
+.bouton_cta{
+    display: inline-block;
+    padding: 14px 28px;
+    background-color: #014F86;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(1,79,134,0.20);
+}
+
+
+
+/* Effet au survol du bouton principal */
+.bouton_cta:hover{
+    background-color: #012A44;
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   04. SECTION SERVICES
+========================================== */
+
+/* Conteneur de la section (.services_section) */
+.services_section{
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Titre de section (.section_titre) */
+.section_titre{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 800;
+    color:#012A44;
+    letter-spacing: -1px;
+    margin: 0 0 40px 0;
+}
+
+/* Mots en couleur dans le titre */
+.section_titre span {
+    color: #468FAF;
+}
+
+
+/* ==========================================
+   05. CARTES DE SERVICES
+========================================== */
+
+/* Grille des cartes (#nos-services.cartes_grid) */
+.cartes_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+}
+
+/* Apparence générale des cartes (.carte) */
+.carte{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #014F86;
+    color:#FFFFFF;
+    padding: 40px;
+    border-radius: 24px;
+    text-align: left;
+    min-height: 240px;
+    box-shadow: 0 8px 24px rgba(1,42,68,0.10);
+    transition: transform 0.2s ease;
+}
+
+/* Effet au survol des cartes */
+.carte:hover{
+    transform: translateY(-4px);
+}
+
+/* Titres des cartes (.carte h3) */
+.carte h3{
+    font-size: 26px;
+    font-weight: 700;
+    margin : 0 0 12px 0;
+}
+
+/* Paragraphes des cartes (.carte p) */
+.carte p{
+    font-size: 16px;
+    line-height: 1.6;
+    color: #E5F3FA;
+    margin: 0 0 30px 0;
+}
+
+/* Carte occupant toute la largeur (.carte_full) */
+.carte_full {
+    grid-column: 1 / -1;
+}
+
+/* Badges à l'intérieur des cartes (.carte_badge) */
+.carte_badge {
+    align-self: flex-start;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.16);
+    color:#FFFFFF;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* ==========================================
+   06. FOOTER - PIED DE PAGE
+========================================== */
+
+/* Apparence générale du footer */
+
+footer{
+    background-color: #012A44;
+    color: #FFFFFF;
+    padding: 50px 40px;
+}
+
+/* Partie supérieure : deux colonnes (.footer_haut) */
+
+.footer_haut {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:40px;
+}
+
+/* Identité de l'agence (.footer_marque) */
+.footer_marque{
+    max-width: 400px;
+}
+
+/* Titre de l'agence (.footer_marque h2) */
+.footer_marque h2{
+    font-size: 26px;
+    font-weight: 400;
+    color:#FFFFFF;
+    margin: 0 0 12px 0;
+}
+
+
+/* Description de l'agence (.footer_marque p) */
+.footer_marque p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #89C2D9;
+    margin:0;
+}
+
+
+/* Navigation du footer (.footer_nav) */
+.footer_nav{
+    text-align: right;
+}
+
+
+/* Titre de la navigation (.footer_nav h3) */
+.footer_nav h3{
+    font-size: 17px;
+    font-weight: 700;
+    color:#FFFFFF;
+    margin: 0 0 18px 0;
+
+}
+
+
+/* Liste des liens de navigation (.footer_nav ul) */
+.footer_nav ul{
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Espacement entre les liens (.footer_nav li) */
+.footer_nav li{
+    margin-bottom: 12px;
+}
+
+
+/* Apparence des liens de navigation (.footer_nav a) */
+.footer_nav a{
+    color: #D4E6EF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+
+/* Effet au survol des liens (.footer_nav a:hover) */
+.footer_nav a:hover{
+    color:#89C2D9;
+}
+
+
+/* Ligne de séparation horizontale (footer hr) */
+footer hr {
+    border: none;
+    border-top: 1px solid #468FAF;
+    margin: 40px 0 25px 0;
+}
+
+
+/* Partie inférieure du footer (.footer_bas) */
+.footer_bas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+
+/* Texte du copyright (.footer_bas p) */
+.footer_bas p{
+    margin:0;
+    font-size: 13px;
+    color: #D4E6EF;
+}
+
+
+/* Lien de contact (.footer_bas a) */
+.footer_bas a{
+    color:#89C2D9;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+
+/* Effet au survol du lien contact (.footer_bas a:hover) */
+.footer_bas a:hover {
+    color: #FFFFFF;
+}
+
+
+
+/* ==========================================
+   07. PAGE SERVICES - INTRODUCTION
+========================================== */
+
+/* Conteneur de l'introduction (.services_intro) */
+.services_intro{
+    max-width: 900px;
+    margin: 0 auto 70px auto;
+    text-align: center;
+}
+
+/* Titre principal (.services_intro h1) */
+.services_intro h1{
+    font-size: 56px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+/* Mot en couleur (.services_intro h1 span) */
+.services_intro h1 span {
+    color: #468FAF;
+}
+
+/* Paragraphe d'introduction (.services_intro p) */
+.services_intro p {
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #22577A;
+}
+
+
+/* ==========================================
+   08. PAGE SERVICES - MENU LATÉRAL
+========================================== */
+
+/* Conteneur du aside et des services (.services_box) */
+.services_box{
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: left;
+    display: flow-root;
+}
+
+/* Apparence et position flottante du aside (.service-aside) */
+.service-aside{
+    float: left;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 25px;
+    margin-right: 30px;
+    background-color: #C9E1EF;
+    border-radius: 18px;
+}
+
+/* Titre du aside (.service-aside h2) */
+.service-aside h2{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 25px 0;
+    color:#012A44;
+}
+
+/* Liste du menu latéral (.service-aside ul) */
+.service-aside ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Espacement entre les éléments (.service-aside li) */
+.service-aside li{
+    margin-bottom: 18px;
+}
+
+/* Liens du menu latéral (.service-aside a) */
+.service-aside a{
+    text-decoration: none;
+    color: #014F86;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.5;
+    transition: color 0.2s ease;
+}
+
+/* Effet au survol des liens (.service-aside a:hover) */
+.service-aside a:hover{
+    color:#468FAF;
+}
+
+
+/* ==========================================
+   09. PAGE SERVICES - FICHES DES SERVICES
+========================================== */
+
+/* Conteneur des services (.services_details) */
+.services_details{
+    overflow: hidden;
+    text-align: left;
+}
+
+/* Titre Nos solutions (.services_details h2) */
+.services_details h2{
+    font-size: 30px;
+    font-weight: 800;
+    color:#012A44;
+    margin: 0 0 25px 0;
+}
+
+/* Liste des fiches (.services_liste) */
+.services_liste{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+/* Apparence des fiches (.service_fiche) */
+.service_fiche{
+    background-color: #FFFFFF;
+    border: 1px solid #A9C9DC;
+    box-shadow: 0 6px 20px rgba(1, 42, 68, 0.12);
+    padding: 30px;
+    scroll-margin-top: 30px;
+}
+
+/* Titres des fiches (.service_fiche h3) */
+.service_fiche h3{
+    font-size: 24px;
+    font-weight: 700;
+    color:#012A44;
+    margin: 0 0 15px 0;
+}
+
+/* Paragraphes des fiches (.service_fiche p) */
+.service_fiche p{
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0 0 15px 0;
+    border-radius: 18px;
+}
+
+/* Supprimer la marge sous le dernier paragraphe */
+
+.service_fiche p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ==========================================
+   10. PAGE SERVICES - NOTRE MÉTHODE
+========================================== */
+
+/* Conteneur de la méthode (.service_methode) */
+.service_methode{
+    max-width: 1100px;
+    margin: 80px auto 0;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #C9E1EF;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+/* Titre de la méthode (.service_methode h2) */
+.service_methode h2{
+    font-size: 30px;
+    font-weight: 800;
+    color:#012A44;
+    margin: 0 0 35px;
+}
+
+
+/* Liste numérotée (.service_methode ol) */
+.service_methode ol{
+    display: flex;
+    gap:20px;
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+    list-style-type: none;
+    counter-reset: etape;
+    
+}
+
+/* Étapes de la méthode (.service_methode li) */
+.service_methode li{
+    flex: 1;
+    background-color: #FFFFFF;
+    padding: 25px 15px;
+    border-radius: 14px;
+    color:#014F86;
+    font-size: 16px;
+    font-weight: 600;
+    counter-increment: etape;
+}
+
+.service_methode li::before{
+    content: counter(etape, decimal-leading-zero);
+    display: block;
+    font-size: 32px;
+    font-weight: 800;
+    color:#468FAF;
+    margin-bottom: 12px;
+}
+
+
+
+/* ==========================================
+   11. PAGE SERVICES - CONTACT
+========================================== */
+
+/* Conteneur de la section contact (.service_contact) */
+.service_contact{
+    max-width: 850px;
+    margin: 80px auto 0;
+    padding: 60px 20px;
+    text-align: center ;
+    background-color: #F7F8F9;
+
+}
+
+/* Petite étiquette d'introduction (.contact_etiquette) */
+.contact_etiquette{
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color:#468FAF;
+    margin: 0 0 20px 0;
+}
+
+/* Titre principal de contact (.service_contact h2) */
+.service_contact h2{
+    font-size: 42px;
+    font-weight: 800;
+    color:#012A44;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    margin: 0 auto 20px auto;
+    max-width: 700px;
+}
+
+/* Mots en couleur du titre (.service_contact h2 span) */
+.service_contact h2 span{
+    color: #468FAF;
+}
+
+/* Paragraphe de contact (.service_contact p) */
+.service_contact p:not(.contact_etiquette){
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.7;
+    color:#22577A;
+    max-width: 620px;
+    margin: 0 auto 30px auto;
+}
+
+
+/* Bouton principal (.service_contact .bouton_cta) */
+.service_contact .bouton_cta{
+    display: inline-block;
+    padding: 16px 32px;
+    background-color: #014F86;
+    color:#FFFFFF;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(1, 79, 134, 0.15);    
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Effet au survol du bouton (.service_contact .bouton_cta:hover) */
+
+.service_contact .bouton_cta:hover {
+    background-color: #012A44;
+    transform: translateY(-3px);
+}
+
+/* Images illustratives des services (.service_image) */
+
+.service_image  {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+/* ==========================================
+   12. PAGE À PROPOS - INTRODUCTION
+========================================== */
+
+.a_propos_intro {
+    text-align: center;
+    padding: 50px 20px 80px;
+}
+
+.a_propos_intro h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: #012A44;
+    margin-bottom: 20px;
+}
+
+.a_propos_intro h1 span {
+    color: #468FAF;
+}
+
+.a_propos_intro p {
+    font-size: 18px;
+    color: #526879;
+    line-height: 1.7;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+
+/* ==========================================
+   13. PAGE À PROPOS - PRÉSENTATION
+========================================== */
+
+
+/* Section de présentation de l'agence */
+
+.a_propos_presentation {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto 100px;
+}
+
+.presentation_texte {
+    flex: 1;
+}
+
+.presentation_etiquette {
+    color: #468FAF;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 15px;
+}
+
+.a_propos_presentation .presentation_texte {
+    text-align: left;
+}
+
+.a_propos_presentation .presentation_etiquette {
+    text-align: left;
+}
+
+.presentation_texte h2 {
+    color: #012A44;
+    font-size: 34px;
+    line-height: 1.3;
+    margin-bottom: 24px;
+}
+
+.presentation_texte p:not(.presentation_etiquette) {
+    color: #526879;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+.presentation_image {
+    flex: 1;
+    min-height: 320px;
+    background-color: #C9E1EF;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.presentation_image img {
+    display: block;
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+
+
+/* ==========================================
+   14. PAGE À PROPOS - MISSION ET VISION
+========================================== */
+
+.a_propos_valeurs {
+    display: flex;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto 90px;
+}
+
+.valeur_carte {
+    flex: 1;
+    background-color: #C9E1EF;
+    border-radius: 18px;
+    padding: 40px 35px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.valeur_carte:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(1, 42, 68, 0.1);
+}
+
+.valeur_carte h2 {
+    color: #012A44;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.valeur_carte p {
+    color: #22577A;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   15. PAGE À PROPOS - TECHNOLOGIES
+========================================== */
+
+.a_propos_technologie {
+    max-width: 1100px;
+    margin: 0 auto 60px;
+    padding: 50px 45px;
+    background-color: #FFFFFF;
+    border: 1px solid #D8E6EF;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(1, 42, 68, 0.04);
+}
+
+.technologies_etiquette {
+    color: #468FAF;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.a_propos_technologie h2 {
+    color: #012A44;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.35;
+    margin-bottom: 20px;
+}
+
+.a_propos_technologie p:not(.technologies_etiquette) {
+    color: #526879;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 0 auto 28px;
+}
+
+.a_propos_technologie a {
+    display: inline-block;
+    color: #014F86;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    border-bottom: 1px solid #014F86;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+.a_propos_technologie a:hover {
+    color: #468FAF;
+    border-color: #468FAF;
+}
+
+
+
+
+
+
